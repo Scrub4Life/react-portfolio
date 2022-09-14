@@ -1,23 +1,26 @@
 import React from "react";
 
-const Navbar = () => {
+// bootstrap navbar components
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+const Navigation = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-center">
-        <ul>
-          <li>
-           <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar bg="primary" expand="lg" fixed="top">
+      <Container>
+        <Navbar.Brand href="#about">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="nav ms-auto">
+            <Nav.Link href="#about">About Me</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navigation;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,32 +14,18 @@ body {
 }
 
 /* navbar */
-nav {
-  display: flex;
-  justify-content: end;
-  flex-direction: row;
-  background-color: brown;
-  margin: 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  padding-right: 60px;
-  margin: 15px 0;
-}
-
 nav a {
-  margin: 20px;
-  font-size: 25px;
-  text-decoration: none;
-  color: azure;
+  /* margin: 20px; */
+  /* text-decoration: none; */
+  /* color: azure; */
   font-weight: bold;
-  position: relative;
+  /* position: relative; */
   padding-bottom: 5px;
+}
+
+.nav {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* about section */
@@ -88,38 +78,27 @@ nav a {
   border-bottom: 2px solid white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  margin: 1em auto;
-  padding: 0 100px;
+.column {
+  margin: 1rem 0;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ****************************************************************************** */
+
 
 .card {
   display: flex;
-  flex-direction: column;
   background-color: #303841;
-  margin: 0;
-  /* max-width: 30%;/ */
+  /* margin: 0; */
 }
 
 .card img {
   max-width: 100%;
-}
-
-.card p {
-  margin: 5px 0 10px;
-}
-
-.card code {
-  visibility: hidden;
-  margin: 0 10px;
-  color: #ff7f50;
-}
-
-.card:hover code {
-  visibility: visible;
 }
 
 #projects a,
@@ -130,17 +109,11 @@ nav a {
   font-weight: bold;
   /* margin: 5px; */
 }
-
-button {
-  background-color: #303841;
-  padding: 10px;
-  border: none;
-  border-radius: 15px;
+/* filter buttons */
+.btn-group {
+  margin: 1rem auto;
 }
 
-button:hover {
-  background-color: #be3144;
-}
 
 /********** contact section **********/
 #contact {
@@ -217,6 +190,25 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 0 50px;
   }
+
+  /* filter buttons */
+  /* .filter-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    padding: 0.375rem 0.75rem;
+    color: #c59d5f;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 0.25rem;
+  }
+  .filter-btn:hover {
+    background: #c59d5f;
+    color: #fff;
+  } */
 
   /********** Contact Section  **********/
   #contact ul {
