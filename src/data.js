@@ -5,7 +5,8 @@ import img3 from "./images/tip calculator.png";
 import img4 from "./images/dice challenge.png";
 import img5 from "./images/drum kit.png";
 import img6 from "./images/simon game.png";
-import img7 from "./images/rating component.png"
+import img7 from "./images/rating component.png";
+import img8 from "./images/advice generator.png";
 
 const data = [
   {
@@ -66,19 +67,11 @@ const data = [
   },
   {
     id: 8,
-    title: "Simon game",
-    link: "https://scrub4life.github.io/simon-game/",
-    image: img6,
-    category: "jQuery",
-    repo: "https://github.com/Scrub4Life/simon-game/tree/gh-pages",
-  },
-  {
-    id: 9,
-    title: "Simon game",
-    link: "https://scrub4life.github.io/simon-game/",
-    image: img6,
-    category: "jQuery",
-    repo: "https://github.com/Scrub4Life/simon-game/tree/gh-pages",
+    title: "Advice Generator",
+    link: "https://avery-blake-advice-generator.vercel.app/",
+    image: img8,
+    category: "React",
+    repo: "https://github.com/Scrub4Life/advice-generator/tree/master",
   },
 ];
 
