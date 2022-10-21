@@ -65,6 +65,7 @@ const data = [
     category: "React",
     repo: "https://github.com/Scrub4Life/interactive-rating-component",
   },
+<<<<<<< Updated upstream
   {
     id: 8,
     title: "Advice Generator",
@@ -73,6 +74,8 @@ const data = [
     category: "React",
     repo: "https://github.com/Scrub4Life/advice-generator/tree/master",
   },
+=======
+>>>>>>> Stashed changes
 ];
 
 export default data;

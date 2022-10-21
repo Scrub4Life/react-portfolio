@@ -1,7 +1,9 @@
 import React from "react";
+// component
 import Card from "react-bootstrap/Card";
+// GH icon
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+// bootstrap grid
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,11 +19,21 @@ const project = ({ items }) => {
               <Card style={{ width: "26rem" }} key={id}>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
-                  <Card.Link href={link} target="_blank" rel="noreferrer">
+                  <Card.Link
+                    className="card-title"
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {title}
                   </Card.Link>
                   <span> | </span>
-                  <Card.Link href={repo} target="_blank" rel="noreferrer">
+                  <Card.Link
+                    className="card-repo"
+                    href={repo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <GitHubIcon />
                   </Card.Link>
                 </Card.Body>

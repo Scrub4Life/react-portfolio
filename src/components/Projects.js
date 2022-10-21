@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+// data
 import data from "../data";
+// components
 import Card from "./Card";
 import Categories from "./Categories";
 
@@ -23,7 +25,8 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h2 className="project-title">My Projects</h2>
+      <h2 className="project-title">Projects</h2>
+      <hr />
       <Categories categories={categories} filterItems={filterItems} />
       <Card items={arr} />
     </div>
